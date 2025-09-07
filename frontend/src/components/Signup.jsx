@@ -19,7 +19,7 @@ const Signup = () => {
 
   function signup() {
     axios
-      .post("http://localhost:5000/signup", {
+      .post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/signup`, {
         username: user,
         password: pass,
       })

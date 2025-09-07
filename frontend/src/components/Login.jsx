@@ -19,7 +19,7 @@ const Login = () => {
 
     function check() {
         axios
-            .post("http://localhost:5000/login", {
+            .post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/login`, {
                 username: user,
                 password: pass,
             })
